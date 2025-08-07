@@ -22,7 +22,7 @@
 
 .video iframe{
     width: 50rem;
-    height: 27.5rem;
+    haspect-ratio: 16 / 9;;
     max-width: 100%;
     box-shadow: 2px 4px 4px rgb(58, 67, 70);
     border-radius: 8px;
@@ -267,4 +267,5 @@ button:hover{
         height: 2.25rem;
         font-size: 1rem;
     }
+
 }
