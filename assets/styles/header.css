@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 5%; 
+    height: 10vh;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+.logoford img {
+    height: 3.125rem;
+}
+
+.logoford img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navegação ul {
+    display: flex;
+    gap: 1.25rem; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navegação ul li a {
+    font-family: "Abel", sans-serif;
+    text-decoration: none;
+    color: #02509e;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+    display: inline-block; 
+}
+
+.navegação ul li a:hover {
+    transform: scale(1.1);
+    text-shadow: 2px 2px 5px rgba(120, 153, 165, 0.534);
+}
+
+
+
+.linha {
+    box-shadow: 2px 2px 4px rgb(58, 67, 70);
+    border: none;
+    height: 2px;
+    margin: 0;
+    width: 100%;
+}
+  
+@media (max-width:768px) {
+    header {
+        height: auto;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .logoford img{
+        width: 4rem;
+        height: auto;
+    }
+
+    .menu{
+        justify-content: center;
+    }
+
+    .navegação ul{
+        align-items: center;
+        gap: 0.65rem;
+    }
+
+    .navegação ul li a {
+        font-size: 1.05rem;
+    }
+
+    .linha{
+        width: 100%;
+    }
+}
+

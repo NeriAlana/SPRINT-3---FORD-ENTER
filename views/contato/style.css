@@ -1,0 +1,144 @@
+
+
+@import url('../../assets/styles/header.css');
+@import url('../../assets/styles/footer.css');
+
+
+html, body {
+    overflow-x: hidden;
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px; 
+  }
+
+.bloco img{
+    display: flex;
+    width: 400px;
+    animation: entrarDaEsquerda 1s ease-out forwards;
+    opacity: 0;
+}
+
+
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 70px;
+    gap: 10px;
+}
+
+.texto{
+    position: relative;
+    right: 10px;
+    display: flex;
+    align-self: flex-start;   
+    font-family: "Abel", sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 2px;
+    color: rgb(44, 42, 42);
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: -5px;
+}
+
+.inputs input, textarea{
+    width: 250px;
+    flex-direction: column;
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 2px grey;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1rem);
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);  
+}
+
+.inputs textarea{    resize: vertical;
+    min-height: 10px;
+    max-height: 250px;
+}
+
+.inputs select{
+    border-radius: 10px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    border: solid 2px grey;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    color: gray;
+    transform: scale(1.1rem);
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+    padding: 8px;
+}
+
+.inputs button{
+    position: relative;
+    left: 10px;
+    align-self: flex-end;
+    border-radius: 10px;
+    border: solid 2px rgb(39, 50, 211);
+    color: #fff;
+    background: linear-gradient(to right, #2b2383, #0800fe);
+    padding: 5px;
+    width: 150px;
+    font-family: "Abel", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    margin-top: 5px;
+}
+
+button:hover{
+    background: linear-gradient(to left, #2b2383, #0800fe);
+    transform: scale(1.1);
+    border:solid 2px #08679a;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* o carro entra quando a página é carregada */
+
+@keyframes entrarDaEsquerda {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media(max-width:768px){
+
+    .principal{
+        flex-direction: column;
+        padding-bottom: 5rem;
+    }
+
+    .bloco img{
+        width: 250px;
+    }
+
+    .inputs{
+        gap: 5px;
+        margin-top: 20px;
+    }
+
+    .inputs input, textarea{
+        width: 250px;
+        padding: 3px;
+    }
+
+    .inputs select{
+        padding: 3px;
+    }
+}
