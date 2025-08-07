@@ -94,6 +94,7 @@ html, body {
     font-size: 1rem;
     transition: all 0.3s ease-in-out;
     margin-top: 5px;
+    margin-bottom: 5rem;
 }
 
 button:hover{
@@ -141,4 +142,5 @@ button:hover{
     .inputs select{
         padding: 3px;
     }
+
 }
